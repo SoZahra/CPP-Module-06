@@ -6,7 +6,7 @@
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 17:32:36 by fzayani           #+#    #+#             */
-/*   Updated: 2025/03/12 17:38:23 by fzayani          ###   ########.fr       */
+/*   Updated: 2025/03/13 14:12:57 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,18 @@
 #define SCALARCONVERTER_HPP
 
 #include <iostream>
+#include <string>
 
 class ScalarConverter{
 
 	private :
-		std::string form;
-		std::string value;
+		ScalarConverter() = delete;
+		~ScalarConverter() = delete;
+		ScalarConverter(const ScalarConverter& other) = delete;
+		ScalarConverter& operator=(const ScalarConverter& other)= delete;
 
 	public :
-		static const void convert(std::string form);
+		static void convert(std::string& literal);
 };
 
 
