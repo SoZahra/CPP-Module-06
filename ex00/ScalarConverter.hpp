@@ -6,7 +6,7 @@
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 17:32:36 by fzayani           #+#    #+#             */
-/*   Updated: 2025/03/13 14:12:57 by fzayani          ###   ########.fr       */
+/*   Updated: 2025/03/15 16:05:09 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@
 class ScalarConverter{
 
 	private :
-		ScalarConverter() = delete;
-		~ScalarConverter() = delete;
-		ScalarConverter(const ScalarConverter& other) = delete;
-		ScalarConverter& operator=(const ScalarConverter& other)= delete;
+		ScalarConverter();
+		~ScalarConverter();
+		ScalarConverter(const ScalarConverter& other);
+		ScalarConverter& operator=(const ScalarConverter& other);
 
 	public :
-		static void convert(std::string& literal);
+		static void convert(const std::string& literal);
 };
 
 
