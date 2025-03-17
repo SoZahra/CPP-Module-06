@@ -6,17 +6,17 @@
 #    By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/15 16:57:49 by fzayani           #+#    #+#              #
-#    Updated: 2025/03/15 16:57:58 by fzayani          ###   ########.fr        #
+#    Updated: 2025/03/17 11:27:34 by fzayani          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Serialization
- 
+
 CC = c++
 
 CFLAG = -Wall -Wextra -Wextra -std=c++98
 
-SRC = main.cpp ScalarConverter.cpp
+SRC = main.cpp Serializer.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
